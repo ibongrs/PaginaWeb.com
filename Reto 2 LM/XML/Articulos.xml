@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="TablaArticulo.xsl"?>
+<?xml-model href="../XSD/Articulos.xsd"?>
+<Articulos>
+  <Procesadores>
+    <Procesador>
+      <Numero>1</Numero>
+      <Precio>120.38€</Precio>
+      <Marca>Intel</Marca>XX
+      <Modelo>i5 10400f</Modelo>
+    </Procesador>
+    <Procesador>
+      <Numero>1</Numero>
+      <Precio>120.38€</Precio>
+      <Marca>Intel</Marca>
+      <Modelo>i5 10400f</Modelo>
+    </Procesador> 
+  </Procesadores>
+
+  <PlacasBase>
+    <Placa>
+      <Numero>1</Numero>
+      <Precio>150.00€</Precio>
+      <Marca>ASUS</Marca>
+      <Modelo>ROG Strix B550-F Gaming</Modelo> 
+    </Placa>
+    <Placa>
+      <Numero>1</Numero>
+      <Precio>150.00€</Precio>
+      <Marca>ASUS</Marca>
+      <Modelo>ROG Strix B550-F Gaming</Modelo> 
+    </Placa>
+  </PlacasBase>
+
+  <TarjetasGraficas>
+    <Grafica>
+      <Numero>1</Numero>
+      <Precio>400.00€</Precio>
+      <Marca>NVIDIA</Marca>
+      <Modelo>GeForce RTX 3070</Modelo>
+    </Grafica>
+    <Grafica>
+      <Numero>1</Numero>
+      <Precio>400.00€</Precio>
+      <Marca>NVIDIA</Marca>
+      <Modelo>GeForce RTX 3070</Modelo>
+    </Grafica>
+  </TarjetasGraficas>
+
+  <FuentesAlimentacion>
+    <Fuente>
+      <Numero>1</Numero>
+      <Precio>80.00€</Precio>
+      <Marca>Corsair</Marca>
+      <Modelo>RM750x</Modelo>
+    </Fuente>
+    <Fuente>
+      <Numero>1</Numero>
+      <Precio>80.00€</Precio>
+      <Marca>Corsair</Marca>
+      <Modelo>RM750x</Modelo>
+    </Fuente>
+  </FuentesAlimentacion>
+
+  <MemoriasRAM>
+    <ModuloRAM>
+      <Numero>1</Numero>
+      <Precio>60.00€</Precio>
+      <Marca>Corsair</Marca>
+      <Capacidad>16GB</Capacidad>
+      <Modelo>Vengeance LPX DDR4-3200</Modelo>
+    </ModuloRAM>
+    <ModuloRAM>
+      <Numero>1</Numero>
+      <Precio>60.00€</Precio>
+      <Marca>Corsair</Marca>
+      <Capacidad>16GB</Capacidad>
+      <Modelo>Vengeance LPX DDR4-3200</Modelo>
+    </ModuloRAM>
+  </MemoriasRAM>
+
+  <UnidadesAlmacenamiento>
+    <Unidad>
+      <Numero>1</Numero>
+      <Precio>80.00€</Precio>
+      <Tipo>SSD</Tipo>
+      <Capacidad>500GB</Capacidad>
+      <Marca>Samsung</Marca>
+      <Modelo>970 EVO Plus</Modelo>
+    </Unidad>
+    <Unidad>
+      <Numero>1</Numero>
+      <Precio>80.00€</Precio>
+      <Tipo>SSD</Tipo>
+      <Capacidad>500GB</Capacidad>
+      <Marca>Samsung</Marca>
+      <Modelo>970 EVO Plus</Modelo>
+    </Unidad>
+  </UnidadesAlmacenamiento>
+
+  <DisipadoresCPU>
+    <Disipador>
+      <Numero>1</Numero>
+      <Precio>50.00€</Precio>
+      <Marca>Noctua</Marca>
+      <Modelo>NH-U12S</Modelo>
+    </Disipador>
+    <Disipador>
+      <Numero>1</Numero>
+      <Precio>50.00€</Precio>
+      <Marca>Noctua</Marca>
+      <Modelo>NH-U12S</Modelo>
+    </Disipador>
+  </DisipadoresCPU>
+</Articulos>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Articulos">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Definiciones para las secciones existentes -->
+                <xs:element name="Procesadores"/>
+                <xs:element name="PlacasBase"/>
+                <xs:element name="TarjetasGraficas"/>
+                <xs:element name="FuentesAlimentacion"/>
+                <xs:element name="MemoriasRAM"/>
+                <xs:element name="UnidadesAlmacenamiento"/>
+                <xs:element name="DisipadoresCPU"/>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definir la estructura para Procesadores-->
+    <xs:complexType name="Procesadores">
+        <xs:sequence>
+        <xs:element name="Procesador"/>
+       
+    </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Procesador">
+        <xs:sequence>
+        <xs:element name="Numero" type="xs:int"/>
+        <xs:element name="Precio" type="xs:decimal"/>
+        <xs:element name="Marca" type="xs:string"/>
+        <xs:element name="Modelo" type="xs:string"/>
+     </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definir la estructura para PlacasBase-->
+
+    <xs:complexType name="PlacasBase">
+        <xs:sequence>
+        <xs:element name="Placa"/>
+       
+    </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Placa">
+        <xs:sequence>
+        <xs:element name="Numero" type="xs:int"/>
+        <xs:element name="Precio" type="xs:decimal"/>
+        <xs:element name="Marca" type="xs:string"/>
+        <xs:element name="Modelo" type="xs:string"/>
+     </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definir la estructura para TarjetasGraficas  -->
+
+    <xs:complexType name="TarjetasGraficas">
+        <xs:sequence>
+        <xs:element name="Grafica"/>
+       
+    </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Grafica">
+        <xs:sequence>
+        <xs:element name="Numero" type="xs:int"/>
+        <xs:element name="Precio" type="xs:decimal"/>
+        <xs:element name="Marca" type="xs:string"/>
+        <xs:element name="Modelo" type="xs:string"/>
+     </xs:sequence>
+    </xs:complexType>
+
+        <!-- Definir la estructura para FuentesAlimentacion -->
+
+        <xs:complexType name="FuentesAlimentacion">
+            <xs:sequence>
+            <xs:element name="Fuente"/>
+           
+        </xs:sequence>
+        </xs:complexType>
+        
+        <xs:complexType name="Fuente">
+            <xs:sequence>
+            <xs:element name="Numero" type="xs:int"/>
+            <xs:element name="Precio" type="xs:decimal"/>
+            <xs:element name="Marca" type="xs:string"/>
+            <xs:element name="Modelo" type="xs:string"/>
+         </xs:sequence>
+        </xs:complexType>
+
+<!-- Definir la estructura para MemoriaRAM -->
+
+<xs:complexType name="MemoriasRAM">
+    <xs:sequence>
+    <xs:element name="ModuloRAM"/>
+   
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModuloRAM">
+    <xs:sequence>
+    <xs:element name="Numero" type="xs:int"/>
+    <xs:element name="Precio" type="xs:decimal"/>
+    <xs:element name="Marca" type="xs:string"/>
+    <xs:element name="Modelo" type="xs:string"/>
+ </xs:sequence>
+</xs:complexType>
+
+<!-- Definir la estructura para UnidadesAlmacenamiento-->
+
+<xs:complexType name="UnidadesAlmacenamiento">
+    <xs:sequence>
+    <xs:element name="Unidad"/>
+   
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Unidad">
+    <xs:sequence>
+    <xs:element name="Numero" type="xs:int"/>
+    <xs:element name="Precio" type="xs:decimal"/>
+    <xs:element name="Marca" type="xs:string"/>
+    <xs:element name="Modelo" type="xs:string"/>
+ </xs:sequence>
+</xs:complexType>
+
+<!-- Definir la estructura para DisipadoresCPU -->
+
+<xs:complexType name="DisipadoresCPU">
+    <xs:sequence>
+    <xs:element name="Disipador"/>
+   
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Disipador">
+    <xs:sequence>
+    <xs:element name="Numero" type="xs:int"/>
+    <xs:element name="Precio" type="xs:decimal"/>
+    <xs:element name="Marca" type="xs:string"/>
+    <xs:element name="Modelo" type="xs:string"/>
+ </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

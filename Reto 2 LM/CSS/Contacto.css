@@ -1,0 +1,67 @@
+/*FORMULARIO DE LA PAGINA WEB*/
+.Formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; /*separacion de 20px*/
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px; /*borde de 10px*/
+    }
+      
+      form {
+        display: flex;
+        flex-direction: column; /*la direcion en se deben de colocar los elementos con flex*/
+      }
+      
+      label {
+        color: #002fff;
+        margin-top: 10px;
+      }
+    
+      /* Estilos para los grupos de entrada */
+       .input-group {
+        margin: 10px 0;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+  
+      textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #005eff;
+        border-radius: 5px;
+        resize: none; /*para que no pueda ser redimensionado por el usuario*/
+      }
+      
+      input[type="checkbox"] {
+        margin: 10px 0;
+      }
+      
+      .radio-group p {
+        color: #002fff;
+      }
+      
+      button {
+        background-color: #ff6600;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover { /*para cuando el usuario pase el raton por encima*/
+        background-color: #ff3300;
+      }
+    
+      /* Estilos para la disposición en pantalla pequeña (responsive) */
+    @media (max-width: 600px) { /*la anchura de la ventana de Google, etc sea igual o menos a 600px*/
+        .formulario-container {
+          max-width: 100%;
+          padding: 10px;
+        }
+    }
+      
+    /*FIN DEL FORMULARIO*/

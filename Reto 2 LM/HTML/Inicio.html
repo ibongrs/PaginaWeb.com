@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Inicio.css" />
+    <link rel="stylesheet" href="/CSS/Style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    
+    <script>
+      
+      $(document).ready(function(){
+        $("#articulos").hide();
+        $("button").click(function(){
+          $("#articulos").slideToggle(); // Utiliza slideToggle() para alternar entre mostrar y ocultar la caja
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+        <section class="contenido-principal">
+          <article>
+            <h2>Bienvenidos</h2>
+            <h3>Bienvenidos a la Transformación Digital de <b>PixelTecnology</b> </h3>
+                
+                <p>En <b>PixelTecnology</b>, nos enorgullece anunciar una emocionante fase de crecimiento y modernización. Gracias a nuestro continuo compromiso con la excelencia y la innovación, hemos alcanzado un hito significativo. Hoy, con 30 empleados y un próspero rendimiento económico, damos un paso adelante hacia el futuro.</p>
+                
+                <h3>Nuestra Evolución:</h3>
+               <p> Después de años de colaboración con consultorías externas, hemos decidido dar un paso audaz. Hemos establecido nuestro propio Departamento de Informática, con un equipo dedicado que liderará la revolución tecnológica desde dentro. Este equipo será la columna vertebral de nuestra infraestructura digital, asegurando una conectividad fluida y eficiente entre nuestras sedes en Txurdinaga, Zamudio y Getxo.</p>
+                <h3>Infraestructura Tecnológica de Vanguardia:</h3>
+                <p>En la sede central de Txurdinaga, hemos implementado un servidor de última generación que no solo autentica a nuestros usuarios, sino que también gestiona perfiles móviles y garantiza la seguridad de acceso a las carpetas según los departamentos. Un administrador de red experimentado supervisará esta operación, asegurando un rendimiento óptimo y una administración segura.</p>
+                
+                <h3>Base de Datos para el Éxito Empresarial:</h3>
+                <p>Nuestra base de datos, diseñada con precisión y respaldada por reglas de integridad referencial, será el epicentro de nuestras operaciones. A través de consultas especializadas, aprovecharemos al máximo la información para impulsar nuestras actividades empresariales.</p>
+                
+                <h3>Web Responsive para un Mundo Dinámico:</h3>
+               <p>En nuestra segunda fase, hemos reimaginado nuestra presencia en línea. La nueva página web es completamente responsive, adaptándose a cualquier dispositivo. Utilizamos tecnologías web avanzadas, como JavaScript y XML, para ofrecer un contenido dinámico y escalable. Este es un paso crucial para afrontar el crecimiento continuo de nuestra empresa.</p> 
+                
+               <h3> Taller Informático Seguro y Eficiente:</h3>
+                <p>Con la incorporación de un taller informático interno, hemos desarrollado un riguroso Plan de Seguridad. Utilizamos herramientas de diagnóstico de vanguardia para garantizar un mantenimiento eficiente y seguro de nuestros equipos, cumpliendo con los más altos estándares de calidad.</p>
+                
+               <p> En <b>PixelTecnology</b>, estamos construyendo el futuro tecnológico juntos. Únanse a nosotros en este emocionante viaje hacia la innovación y la excelencia. ¡Bienvenidos a la nueva era digital de <b>PixelTecnology</b>!</p>
+      
+          </article>
+          <article>
+            <h2>Ubicacion de nuestra empresa</h2>
+            <p>Nuestra empresa esta ubicada en Vizcaya, Pais Vasco, España.</p> 
+            <p>Os dejamos un minimapa para que podais investigar mas sobre nuestra ubicacion.</p>
+            <iframe id="minimapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.7016075218285!2d-2.9049818243009966!3d43.257675177923105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fac87437727%3A0x364f27e82def0130!2sCIFP%20Txurdinaga%20LHII!5e0!3m2!1ses!2ses!4v1697529401403!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+        </section>
+      </main>
+        <article id="boton">
+     <button class="btn-neon"> 
+ 
+      <span id="span1"></span>
+      <span id="span2"></span>
+      <span id="span3"></span>
+      <span id="span4"></span>
+      SERVICIOS
+    </button>
+    </article>
+  <div id="articulos">
+        <article class="servicio">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est earum, similique excepturi repudiandae doloremque voluptas nulla suscipit ducimus beatae dolorem. Ut eveniet exercitationem tenetur architecto beatae ducimus fugit ex enim!</p>
+            <img class="foto-servicio" src="/Fotos/comprar-ordenador-por-piezas.webp" alt="">
+        </article>
+        <article class="servicio">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est earum, similique excepturi repudiandae doloremque voluptas nulla suscipit ducimus beatae dolorem. Ut eveniet exercitationem tenetur architecto beatae ducimus fugit ex enim!</p>
+          <img class="foto-servicio" src="/Fotos/comprar-ordenador-por-piezas.webp" alt="">
+      </article>
+    </div>
+  </body>
+</html>

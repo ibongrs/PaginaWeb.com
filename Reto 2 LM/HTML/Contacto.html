@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Contacto.css">
+</head>
+<body>
+    <section>
+        <div class="Formulario"><!--Principio de Formulario-->
+            <h1>Formulario de Contacto</h1>
+              <form action="mailto: ibon.garcia@gmail.com">
+                <label for="nombre">Nombre</label> <!--Nombre-->
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+ 
+                <label for="email">Correo Electrónico</label> <!--EMAIL-->
+                <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+
+                <label for="edad">Edad</label> <!--EDAD-->
+                <input type="number" id="edad" name="edad" min="18" max="99" required>
+
+                  <label for="Sexo">Sexo</label><!-- SEXO-->
+                  <select id="seleccionar-color" name="color-favorito">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="@">Prefiero no decirlo</option>
+                  </select>
+            
+                  <label for="comentarios">Comentarios</label> <!--COMENTARIOS-->
+                  <textarea id="comentarios" name="comentarios"  rows="4" cols="50"placeholder="Escribe tus comentarios aquí"></textarea>
+            
+                  <label for="acuerdo">Acepto los términos y condiciones</label> <!--Politica de Privacidad-->
+                  <input type="checkbox" id="acuerdo" name="acuerdo" value="acepto" required>
+                  <div class="radio-group">
+                    <p>¿Cómo te enteraste de nosotros?</p> <!--REDES SOCIALES-->
+                    <input type="radio" id="radio1">
+                    <label for="radio1">Redes Sociales</label>
+                    <input type="radio" id="radio2">
+                    <label for="radio2">Recomendación de un amigo</label>
+                    <input type="radio" id="radio3">
+                    <label for="radio3">Otros</label>
+                   
+                 <br><button  type="submit">Enviar</button> <!--Boton de Enviar-->
+              
+                </form>
+              </div>
+    </section>
+</body>
+</html>

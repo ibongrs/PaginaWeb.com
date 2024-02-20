@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de XML en HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xmllint@0.1.1/xmllint.min.js"></script>
+     
+    <script>
+      function cargarXML() {
+        $.ajax({
+          type: "GET",
+          url: "../XML/Articulos.xml",
+          dataType: "xml",
+          success: function (xml) {
+            console.log("XML cargado correctamente.");
+            cargarXSL(xml);
+          },
+          error: function (xhr, status, error) {
+            console.error("Error al cargar el XML:", error);
+          },
+        });
+      }
+      /* // Función para cargar XSD. En caso de éxito, valida
+      function cargarXSD(xml) {
+        $.ajax({
+          type: "GET",
+          url: "../XSD/Articulos.xsd",
+          dataType: "xml",
+          success: function (xsd) {
+            console.log("XSD cargado correctamente.");
+            if (validarXMLConXSD(xml, xsd)) {
+              console.log("XML correctamente validado.");
+              cargarXSL(xml);
+            } else {
+              console.error("El XML no es válido según el XSD.");
+            }
+          },
+          error: function (xhr, status, error) {
+            console.error("Error al cargar el XSD:", error);
+          },
+        });
+      }
+      // Función para validar XML con XSD
+      function validarXMLConXSD(xml, xsd) {
+        xmllint.validation = true;
+
+        var validationResult = xmllint.validateXML({
+          xml: new XMLSerializer().serializeToString(xml),
+          schema: new XMLSerializer().serializeToString(xsd),
+        });
+
+        if (validationResult.errors) {
+          console.error("Error de validación del XML");
+          console.error(validationResult.errors);
+        }
+
+        return !validationResult.errors;
+      } */
+      // Función para cargar XSL. En caso de éxito, transforrma
+      function cargarXSL(xml) {
+        $.ajax({
+          type: "GET",
+          url: "../XSL/TablaArticulos.xsl",
+          dataType: "xml",
+          success: function (xsl) {
+            console.log("XSL cargado correctamente.");
+            var resultado = transformarXMLConXSL(xml, xsl);
+            console.log("Resultado de la transformación:", resultado);
+            $("#sectionTienda").html(resultado);
+          },
+          error: function (xhr, status, error) {
+            console.error("Error al cargar el XSL:", error);
+          },
+        });
+      }
+      // Función para transformar XML con XSL
+      function transformarXMLConXSL(xml, xsl) {
+        var xsltProcessor = new XSLTProcessor();
+        xsltProcessor.importStylesheet(xsl);
+
+        var resultDocument = xsltProcessor.transformToDocument(xml);
+
+        return new XMLSerializer().serializeToString(resultDocument);
+      }
+      $(document).ready(function () {
+        cargarXML();
+      });
+    </script>
+  </head>
+  <body>
+    <section id="sectionTienda"></section>
+  </body>
+</html>
